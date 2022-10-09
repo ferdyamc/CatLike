@@ -1,0 +1,731 @@
+*{border: none;
+    margin: 0;
+	padding: 0;
+	list-style: none;
+    text-decoration: none;}
+.contenedor{
+    
+   
+    display: flex;
+    flex-wrap: wrap;
+margin: auto;
+     width: 90%;
+    height: 100%;
+  margin-bottom: 100px;
+    
+    
+}
+.navegador{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background: #3c3c3c;
+  -webkit-box-shadow: 12px 12px 29px #555;
+  display: flex;
+  flex-direction: row;
+  z-index: 999;
+
+}
+.ui{
+
+  width: 40%;
+  height: 80px;
+  position: absolute;
+  overflow: hidden;
+  left: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+
+}
+
+.ui li{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  opacity: 0.5;
+}
+.ui li:before{
+  content: '';
+  width: 100%;
+  height: 2px;
+    position: absolute;
+  top: -5%;
+  left: 0;
+  background: #fc5957;
+  transform: scale(0);
+  transform-origin: right;
+  transition: 0.5s ease-in;
+    transition: 0.2s ease-out;
+  border-radius: 15px;
+
+}
+
+.ui li:after{
+  content: '';
+  width: 100%;
+  height: 2px;
+    position: absolute;
+  bottom: -5%;
+  right: 0;
+  background: #fc5957;
+  transform: scale(0);
+  transform-origin: left;
+  transition: 0.5s ease-in;
+  transition:  0.2s ease-out;
+  border-radius: 15px;
+
+}
+
+.ui li:hover:before{
+  transform: scale(1);
+
+}
+.ui li:hover:after{
+  transform: scale(1);
+
+}
+
+
+.ui li img{
+  width: 40px;
+  height: 40px;
+
+
+}
+.ui li a{
+  color: white;
+  text-align: center;
+   font-family: 'Lobster', cursive;
+
+}
+.flechai{
+  opacity: 0;
+  width: 80px;
+  height: 100%;
+  position: absolute;
+  left: 40%;
+  right: 0%;
+
+  animation: 1s animarflecha;
+     transition: 0.3s ease-in;
+    transition: 0.2s ease-out;
+  animarCuadro infinite;
+  animation-iteration-count: infinite;
+}
+.flechai i{
+   opacity: 0.1;
+  margin-top:25%;
+ font-size: 3em;
+ margin-left: 25%;
+  background-size: cover;
+  color: lightgrey;
+}
+.cajalogo{
+  position: absolute;
+  width:120px;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.5s;
+  border-radius:100%;
+   
+}
+.cajalogo img:hover{
+transform: scale(1.05);
+border-radius: 100%;
+
+}
+.logo{
+    position: relative;
+    border-radius: 100%;
+  width: 100%;
+  transition: 0.5s ease-in;
+  transition: 0.3s ease-out;
+  }
+.flechad{
+  opacity: 0;
+  width: 80px;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 57%;
+  animation: 1s animarflecha;
+    transition: 0.3s ease-in;
+    transition: 0.2s ease-out;
+   transform-origin: 0%;
+  animarCuadro infinite;
+  animation-iteration-count: infinite;
+
+
+}
+.flechad i{
+   opacity: 0.1;
+  margin-top:25%;
+ font-size: 3em;
+ margin-left: -2%;
+  background-size: cover;
+  color: lightgrey;
+}
+.ud{
+  width: 40%;
+  height: 80px;
+  position: absolute;
+ right: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+
+}
+.ud li{
+  display: flex;
+  flex-direction: column;
+   position: relative;
+  opacity: 0.5;
+}
+.ud li:before{
+  content: '';
+  width: 100%;
+  height: 2px;
+    position: absolute;
+  top: -5%;
+  left: 0;
+  background: #fc5957;
+  transform: scale(0);
+  transform-origin: right;
+  transition: 0.5s ease-in;
+  transition:  0.2s ease-out;
+  border-radius: 15px;
+}
+.ud li:after{
+  content: '';
+  width: 100%;
+  height: 2px;
+    position: absolute;
+  bottom: -5%;
+  right: 0;
+  background: #fc5957;
+  transform: scale(0);
+  transform-origin: left;
+  transition: 0.5s ease-in ;
+  transition:  0.2s ease-out;
+    border-radius: 15px;
+
+}
+.ud li:hover:before{
+  transform: scale(1);
+}
+.ud li:hover:after{
+  transform: scale(1);
+}
+.lightbox{
+   width: 100%;
+   height: 70vh;
+   background: black;
+   margin-top: 50px;
+    position: absolute;
+  display: none;
+ 
+    
+}
+
+.ud li img{
+
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+ 
+}
+
+.ud li a{
+  color: white;
+  text-align: center;
+   font-family: 'Lobster', cursive;
+
+}
+.lightbox{
+   width: 100%;
+   height: 70vh;
+   background: black;
+   margin-top: 50px;
+    position: absolute;
+  display: none;
+ 
+    
+}
+h2{
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 3em;
+    color:#fd8f8e;
+  margin-top: 18vh;
+        transition: 0.5s ease-in;
+    transition: 0.2s ease-out;
+    
+    transition-delay: 0.2s;
+}
+.cuerpo h2:hover{
+
+  z-index: 10;
+  transform: rotateX(360deg);
+}
+
+.BandejaMensajes{
+    margin: 10px;
+    width: 40%;
+    height: 70vh;
+    
+       border-radius: 15px;
+         
+}
+
+.Mensajes{
+    margin: 10px;
+    width: 55%;
+    height: 70vh;
+    border: solid 2px #fc5957;
+    border-radius: 15px;
+       
+ position: relative;
+}
+.Mensajes img{
+    border: solid 2px #fc5957; 
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    margin: 2%;
+} #EscriM{
+
+    background: lightgray;
+    border-radius: 15px;
+    width: 70%;
+    height: auto;
+    margin: 4% 2%;
+}
+#EscriM p{
+    font-size: 0.9em;
+    margin: 5px;
+    color: black;
+    font-family: 'Roboto',black;
+}
+.EMensaje{
+     border: solid 2px #fc5957; 
+    
+    border-radius: 15px;
+    width: 90%;
+    height: 80px;
+bottom: 5%;
+left: 5%;
+position: absolute;
+    display: flex;
+}
+.EMensaje div{ background: #fc5957;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+       box-shadow: 0px 0px 8px black;
+         cursor: pointer;
+    transition: 0.2s ease-in-out;
+    
+}
+.EMensaje input{
+  color: grey;
+    font-family: 'Lobster', cursive;
+    font-size:1em;
+
+    width: 85%;
+    margin-left: 10px;
+}
+#NMensaje{
+   display: flex ;
+
+}
+.CMensaje{
+
+    width: 90%;
+    height: 30%;
+  border-radius: 10px;
+
+
+        
+
+}
+
+.Mensaje{
+    display: flex;
+    align-items: center;
+    margin: 5%;
+    width: 90%;
+    height: 15vh;
+    padding-bottom: 20px;
+    position: relative;
+    border-radius: 15px;
+       
+}
+.Buscador{
+    width:88%;
+    height: 30px;
+    margin:5%;
+    margin-top: 0px;
+       border: solid 2px #fc5957;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.caja-mensajes{
+  overflow-y: auto;
+  height: 80%;
+}
+.Buscador i{
+   font-size:1.5em;
+   margin-left: 2px;
+   margin-top: 2px;
+   color:#fc5957;
+  
+
+
+}
+.Buscador input{
+    width: 90%;
+    height: 90%;
+        margin: 2px 0px 0px 0px;
+          color: grey;
+    font-family: 'Lobster', cursive;
+    font-size:1em;
+    margin-left: 10px;
+
+    
+}
+.fotoPerfil{
+    border-radius: 100%;
+    width: 15%;
+    height: 70%;
+    margin: 5px;
+    padding: 2px;
+    border: solid 2px #fc5957;
+    
+}
+
+.CMensaje{
+    margin-top: 5%;
+    width: 100%;
+    height: 40px;
+
+}
+.CMensaje p{ 
+    margin: 1px;
+    font-family: 'Roboto',black;
+    font-size: 0.9em;
+    
+     background: lightgray;
+     border-radius: 10px;
+     padding: 2px;
+  box-shadow: 0px 0px 2px;
+ }
+
+.CajaMensaje{
+    width: 70%;
+    margin: 3px;
+    
+}
+.CajaMensaje h1{ 
+    margin: 1px;
+    color: black;
+    font-size: 1.2em;
+    font-family: 'Roboto',black;
+}
+.enviar i{
+    width: 50px;
+    height: 50px;
+    margin: 10px 0px 0px 10px;
+    color: white;
+    font-size: 2em;
+    text-shadow: 0px 0px 50px white;
+  
+ 
+    
+    
+}
+.enviar:hover{
+  transform: scale(1.05);
+   box-shadow: 0px 0px 5px black;
+}
+.leermas{
+  width: 30px;
+  height: 30px;
+
+  position: absolute;
+  bottom: 2%;
+  right: 1%;
+
+}
+.leer{
+  font-size:1.5em;
+  color: #fc5957;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+
+}
+.leer:hover{
+  transform: scale(1.08);
+}
+footer{
+  width: 100%;
+  height: 50px;
+  background: #3c3c3c;
+  -webkit-box-shadow: -10px -10px 35px #555;
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  
+  left: 0;
+}
+footer .cajasinternasfoooter{
+      display: flex;
+    flex-direction: row;
+}
+footer .cajaiconos{
+  width: 40px;
+  height: 40px;
+  position: relative;
+  opacity: 0.3; 
+  transition: 0.5s ease-in;
+    transition: 0.2s ease-out;
+    padding-top: 1%;
+    margin-left: 10px;
+    margin-right: 10px;
+
+
+}
+.txtfooter{
+  color: white;
+  font-family: 'Roboto',black;
+}
+footer .cajaiconos img{
+  width: 40px;
+  height: 40px;
+
+
+}
+footer .cajaiconos i{
+  color: white;
+  position: absolute;
+  top: 42%;
+  left: 30%;
+  font-family: 'Lobster', cursive;
+  cursor:pointer;
+text-shadow:5px 5px 25px white;
+}
+footer .cajap{
+  width: 160px;
+  margin-left: 15px;
+  position: relative;
+  
+  overflow: hidden;
+}
+footer .cajap p{
+   color: white;
+    font-family: 'Lobster', cursive;
+ 
+    font-size: 0.7em;
+    margin-top: 5%;
+    padding-left: 20px;
+    position: absolute;
+    left: -100%;
+    transition: 0.5s ease-in;
+    transition: 0.2s ease-out;
+    border-left: dashed 2px white;
+
+
+
+}
+
+@keyframes animarflecha{
+
+
+  100%{
+    transform: scale(1.2);
+
+
+  }
+  }
+@media screen and (max-width:1280px) and (min-width: 0px){
+
+      .ui{
+      display: inline-flex;
+    }
+    .ui li{
+    display: block;
+    }
+
+   .ui li img{
+    width: 30px;
+    height: 30px;
+
+   }   
+   
+  .ui li a{
+    font-size: 0.8em;
+  }
+
+   .ud  {
+    margin-right: 2%;
+    display: inline-flex;
+    flex-direction: row;
+   }
+   .ud li{
+    display: block;
+    margin-left: 0;
+   }
+      .ud li img{
+    width: 30px;
+    height: 30px;
+   }
+
+   .ud li a{
+    font-size: 0.8em;
+   }
+   .logo{
+    width: 100px;
+    z-index: 10;
+   }
+
+
+
+
+   .ud li:hover:before{
+  transform: scaleX(0);
+}
+.ud li:hover:after{
+  transform: scaleX(0);
+}
+.ui li:hover:before{
+  transform: scaleX(0);
+}
+.ui li:hover:after{
+  transform: scaleX(0);
+}
+
+
+.BandejaMensajes{
+   
+    width: 95%;
+    height: 105vh;
+ 
+}
+.Mensaje{
+  height: 20vh;
+}
+.Mensajes{
+  width: 95%;
+}
+.flechad{
+  display: none;
+
+}
+.flechai{
+  display: none;
+}
+footer{
+  padding-left: 0;
+}
+}
+
+@media screen and (max-width:480px) and (min-width: 0px){
+
+
+.ui{
+  display: block;
+}
+.ud{
+    margin-right: -33%;
+    display: block;
+}
+.ud li img{
+    width: 20px;
+    height: 20px;
+}
+
+.ui li img{
+    width: 20px;
+    height: 20px;
+}
+.ud li:hover:before{
+  transform: scaleX(0);
+}
+.ud li:hover:after{
+  transform: scaleX(0);
+}
+.ui li:hover:before{
+  transform: scaleX(0);
+}
+.ui li:hover:after{
+  transform: scaleX(0);
+}
+
+
+
+
+
+
+.cajalogo{
+  left: 55%;
+}
+.BandejaMensajes{
+   
+    width: 90%;
+    height: 80vh;
+ 
+}
+.CMensaje p{
+height: 80%;
+font-size: 2.5vw;
+}
+.CajaMensaje h1{
+  font-size: 1em;
+}
+
+.Mensaje {
+  width: 87%;
+}
+.mensaje img{
+  margin-top: 5%;
+}
+.Mensajes{
+  width: 90%;
+}
+#EscriM {
+  width: 70%;
+  height: 100%;
+  margin:5% 2%;
+}
+#EscriM {
+  width: 90%;
+
+}
+#EscriM {
+  font-size: 0.6em;
+}
+.EMensaje{
+  width: 87%;
+}
+.cajap{
+
+display: none;
+}
+.contenedor{
+  height: 100%;
+  margin-bottom: 100px;
+
+}
+}

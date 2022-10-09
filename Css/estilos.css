@@ -1,0 +1,376 @@
+*{
+	padding: 0;
+	margin: 0 auto;
+	text-decoration: none;
+	list-style: none;
+}
+
+
+@font-face {
+  font-family: "Roboto Black";
+  src: url("../fuentes/Roboto-Black.ttf");
+  font-family: "geo sans light";
+  src: url("../fuentes/geo sans light.ttf");
+}
+body{
+
+}
+.titulo{
+	margin-bottom: 50px;
+	text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 3em;
+    color: #fc5957;
+    text-shadow: 12px 12px 29px #555;
+    transition: 1s ease-in;
+    transition: 0.5s ease-out;
+    cursor: context-menu;
+}
+.contenedordos h1:hover{
+	transform: rotateX(360deg);
+	
+
+}
+#lightbox{
+	
+	position:absolute;
+	width:100%;
+	height:57%;
+	background:rgba(0,0,0,.9);
+	z-index:1;
+	text-align:center;
+	display:none;
+	}	
+
+#lightbox #cerrar{
+	position:absolute;
+	right:0%;
+	top:0%;
+	 padding:18px;
+    -webkit-text-fill-color: #fc5957;
+     font-family: 'Lobster', cursive;
+    text-shadow: 12px 12px 29px #000;
+	cursor:pointer;
+	transition:all 2s;
+	opacity:0;
+	font-size: 3em;
+	text-shadow: 5px 5px 5px 
+	}
+#lightbox img{
+	position:relative;
+	margin:20vh auto;
+	width:40%;
+	height:45vh;
+	top:-90%;
+	transition:all .5s;
+	border:15px solid  #fc5957;;
+	-webkit-box-shadow: 10px 10px 40px black;
+	border-radius: 5px;
+
+	}
+#seccion1{
+	margin:0 auto;
+	width:100%;
+	height:auto;
+
+	}
+#seccion1 ul{
+	width:90%;
+	height: 55vh;
+	margin:auto;
+	text-align:center;
+	}
+
+#seccion1 ul li{
+	width:18%;
+	margin:12px;	
+	display:inline-block;
+	cursor:pointer;
+	border-radius: 5px;
+	border:solid 4px #fc5957;
+	-webkit-box-shadow: 10px 10px 20px #555;
+	transition: 0.5s ease-in;
+	transition: 0.2s ease-out
+	}
+#seccion1 ul li img{
+	display: block;
+	height: 100%;
+}
+/*.ima  li:hover{
+	transform: rotate(-5deg);
+	
+	border:solid 4px  #4A0004;
+
+	
+}*/
+.cajaslide{
+	position: relative;
+	width: 80%;
+	height: 60px;
+	border-radius: 5px;
+	
+	margin-top: 20px;
+		
+}
+.carrusel ul li img:hover{
+	transform: scale(1.1);
+	box-shadow: 0px 0px 10px black;
+	border:4px solid #4A0004;
+}
+.btnderecha{
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	border: 3px solid #fc5957;
+	background: #b33939;
+	position: absolute;
+	left: 10px;
+	top: 15%;
+	cursor: pointer;
+	transition: 0.5s ease-in;
+    transition: 0.2s ease-out;
+}
+.izquierda{
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+    border: 3px solid #fc5957;
+    background: #b33939;
+	position: absolute;
+	right: 10px;
+	top: 15%;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+    transition: 0.2s ease-out;
+
+	
+}
+.cajaslide button:hover{
+	box-shadow: 0px 0px 10px black;
+	border:4px solid #4A0004;
+}
+.carrusel{
+	width: 80%;
+	height: 60px;
+
+}
+.cjslider{
+	width: 80%;
+	height: 60px;
+	overflow: hidden;
+	position: relative;
+}
+.carrusel ul {
+	width: 80%;
+	height: 60px;
+	display:flex;
+	
+	position: absolute;
+}
+.carrusel ul li{
+	margin: auto;
+	width: 40px;
+	height: 40px;
+	
+	display: inline-block;
+	
+	background.size: cover;
+	margin: 7px 10px 0px 10px;
+}
+.carrusel ul li img{
+	width: 40px;
+	height: 35px;
+	background-size: cover;
+	border-radius: 100%;
+	border: 4px solid #fc5957;
+	 transition: 0.5s ease-in;
+    transition: 0.2s ease-out;
+}
+footer{
+	width: 100%;
+	height: 50px;
+	background: #3c3c3c;
+	-webkit-box-shadow: -10px -10px 35px #555;
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	padding-left: 6%;
+}
+footer .cajasinternasfoooter{
+	    display: flex;
+    flex-direction: row;
+}
+footer .cajaiconos{
+	width: 40px;
+	height: 40px;
+	position: relative;
+	opacity: 0.3;	
+	transition: 0.5s ease-in;
+    transition: 0.2s ease-out;
+    padding-top: 1%;
+
+
+}
+
+footer .cajaiconos img{
+	width: 40px;
+	height: 40px;
+
+
+}
+footer .cajaiconos i{
+	color: white;
+	position: absolute;
+	top: 42%;
+	left: 30%;
+	font-family: 'Lobster', cursive;
+	cursor:pointer;
+text-shadow:5px 5px 25px white;
+}
+footer .cajap{
+	width: 160px;
+	margin-left: 15px;
+	position: relative;
+	
+	overflow: hidden;
+}
+footer .cajap p{
+   color: white;
+   	font-family: 'Lobster', cursive;
+   	
+   	font-size: 0.7em;
+   	margin-top: 5%;
+   	padding-left: 20px;
+   	position: absolute;
+   	left: -100%;
+   	transition: 0.5s ease-in;
+    transition: 0.2s ease-out;
+    border-left: dashed 2px white;
+
+
+
+}
+/*
+footer.cajap p:hover{
+	left: 0%;
+}
+*/
+
+.contenedordos{
+	width: 100%;
+	height: 95vh;
+	padding-top: 40px;
+	overflow: hidden;
+	background-image: url("../img/gatodoso.jpg");
+
+
+    background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	
+}
+.contendordos:after{
+	background: white;
+}
+@media screen and (max-width:1425px) and (min-width: 781px){
+
+
+    #lightbox{
+    	height:56vh;
+    }
+
+	}
+
+@media screen and (max-width:780px) and (min-width: 481px){
+    .contenedor1{
+    	height: 200%;
+    }
+    #seccion1 ul{
+    	height: 100%;
+    	margin-bottom: 100px;
+    }
+
+    #seccion1 ul li{
+    	width: 30%;
+    	height: 100%;
+
+
+    }
+     #lightbox #cerrar{
+     	top: 5%;
+     	right: 0;
+     }
+    #seccion1 ul li{
+    	height: 100%;
+    }
+
+    .contenedordos{
+    	height: 125vh;
+    	padding-top: 40px;
+    }
+    .cajaslide{
+    	display: none;
+    
+    }
+    .titulo{
+    	margin-bottom: 45px;
+    }#lightbox{
+    	height: 100%;
+    	z-index: 5;
+    }
+    #lightbox img{
+    	width: 80%;
+    	height: 300px;
+        position: initial;    }
+
+
+}
+footer{
+	padding-left: 0;
+}
+.cajap{
+	margin-left: 5px;
+}
+@media screen and (max-width:480px) and (min-width: 0px){
+	#seccion1 ul li{
+		width: 35%;
+
+	}
+	#seccion1 ul {
+		height: 95vh;
+
+	}
+	.contenedordos{
+		height: 100vh;
+	}
+	.cajaslide{
+    	display: none;
+    
+    }
+    #lightbox{
+    	height: 100%;
+    }
+       #lightbox img{
+    	width: 90%;
+    	height: 300px;
+    	position: initial;
+
+    }
+        #lightbox #cerrar{
+     	top: 0%;
+     	right: -5%;
+
+     }
+footer{
+
+padding-left: 0;
+}
+.cajap{
+	display: none;
+}
+
+}

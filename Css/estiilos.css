@@ -1,0 +1,551 @@
+*{
+	margin:0 auto;
+	padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border:none;
+    
+}
+@font-face {
+  font-family: "Roboto Black";
+  src: url("../fuentes/Roboto-Black.ttf");
+  font-family: "geo sans light";
+  src: url("../fuentes/geo sans light.ttf");
+}
+body{
+
+}
+
+.navegador{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 80px;
+	background: #3c3c3c;
+	-webkit-box-shadow: 12px 12px 29px #555;
+	display: flex;
+	flex-direction: row;
+	z-index: 20;
+
+}
+
+
+.cajalogo{
+	position: absolute;
+	width:120px;
+	height: 100%;
+	left: 0;
+	right: 0;
+	transition: 0.5s;
+	border-radius:100%;
+	cursor: pointer;
+   
+}
+
+.logo{
+    position: relative;
+    border-radius: 100%;
+	width: 100%;
+	transition: 0.5s ease-in;
+	transition: 0.3s ease-out;
+}
+
+.cajalogo img:hover{
+transform: scale(1.05);
+border-radius: 100%;
+
+}
+
+.tituloinicio{
+ 
+    letter-spacing: 1px;
+	font-family: 'Lobster', cursive;
+    font-size: 4em;
+    color: #fc5957;
+	text-align: center;
+    text-shadow: 12px 12px 29px #555;
+    transition: 0.5s ease-in;
+    transition: 0.2s ease-out;
+    cursor: context-menu;
+    transition-delay: 0.2s;
+}
+.contenedoruno h1:hover{
+	transform: scale(1.2);
+	z-index: 10;
+	transform: rotateX(360deg);
+}
+
+.cajauno{
+width: 100%;
+height: 400px;
+padding-top: 5%;
+display: flex;
+flex-direction: row;
+position: relative;
+}
+
+.vd{	
+width: 40%;
+height: 400px;
+background: #3c3c3c;
+border-radius: 15px;
+box-shadow: 5px 5px 15px #3c3c3c;
+
+}
+.ingreso{
+	margin-left:0px;
+	width:30%;
+	height:100%;
+	background: #3c3c3c;
+	border-radius: 15px;
+	opacity:1;
+    box-shadow: 5px 5px 15px #3c3c3c;
+	}
+
+.formu{
+	width: 90%;
+	height: 90%;
+	margin: auto;
+}
+.formu input{
+	 transition: 0.5s ease-in;
+    transition: 0.2s ease-out;
+}
+.formu .titu{
+     font-size: 1.5em;
+     font-family: 'roboto',black;
+	 color: white;
+	 text-shadow: 5px 5px 30px #aaa;
+	 text-align: center;
+	 margin: 5%;
+	
+	 margin-bottom: 30px;	
+}
+.formu .nombre{
+	font-size: 0.9em;
+	font-family: 'roboto',black;
+	color: white;
+	text-align: center;
+	cursor: pointer;
+	transition: 0.5s ease-in;
+	transition: 0.3s ease-out;
+
+}
+
+.formu .usuario{
+	width: 100%;
+	font-family: 'roboto',black;
+	font-size: 0.9em;
+	text-align: center;
+	margin-top: 20px;
+	border-radius: 10px;
+	padding: 0.5%;
+	margin-bottom: 10px;
+	outline: none;
+}
+.formu .pasword{
+	width: 100%;
+	font-family: 'roboto',black;
+	font-size: 0.9em;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	padding: 0.5%;
+	outline: none;
+}
+.cajaentrar{
+	position: relative;
+    background: #fc5957;
+    z-index: 5;
+	width: 100%;
+	border-radius: 15px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+
+}
+
+.entrar{
+	font-size: 0.9em;	
+	background: transparent;
+	font-family: 'roboto',black;
+	color: white;	
+	width: 100%;
+	border-radius: 15px;
+	padding: 1%;
+	z-index: 50;
+	cursor:pointer;
+}
+
+.entrar:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height:100%;
+	background: rgba(1,1,1,0.5);
+	opacity: 0;
+	z-index: 50;
+	border-radius: 15px;
+	transition: 0.3s ease-in;
+	transition: 0.2s ease-in;
+	transform: scaleX(0);	transform-origin: left;
+
+	z-index: 50;
+}
+.entrar:hover:before{
+	transform: scaleX(1);
+	opacity:1;
+}
+.botones div:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height:100%;
+	background: rgba(1,1,1,0.5);
+	opacity: 0;
+	z-index: 50;
+	border-radius: 15px;
+	transition: 0.3s ease-in;
+	transition: 0.2s ease-in;
+	transform: scaleX(0);	
+	transform-origin: left;
+
+	z-index: 50;
+}
+.botones div:hover:before{
+	transform: scaleX(1);
+	opacity:1;
+}
+.olvi{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 1em;
+	color: cornflowerblue;
+	text-shadow: 5px 5px 30px #aaa;
+	display: block;
+	text-align: center;
+	transition: 1s;
+	cursor: pointer;
+	font-family: 'roboto',black;
+}
+.cajacircu{
+	width: 98%;
+	transition: 1s;
+}
+
+#reco{
+	width: 25px;
+}
+
+.rercor i{
+	width: 25px;
+	height: 25px;
+	background: white;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 20px;
+	cursor: pointer;
+	margin-left: 35%;
+}
+
+.recor{
+	font-size: 0.9em;
+	color: white;
+	text-shadow: 5px 5px 30px #aaa;
+	font-family: 'roboto',black;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	/*margin-left: 32%;*/
+}
+.botones{
+    width: 100%;
+   padding: 1%;
+
+ 
+}
+.botones div{
+      width: 100%;
+      padding: 1%;
+      flex-direction: row;
+      border-radius: 15px;
+      text-align: center;
+      position: relative;
+      font-size: 0.9em;
+      color: white;
+      font-family: 'roboto',black;
+      background-color: white;
+      margin-bottom: 10px;
+      margin-top: 10px;
+        
+}
+.botones .google{
+	background: red;
+	position: relative;
+	margin-top: 10px;
+	cursor: pointer;
+}
+.botones .facebook{
+	background:#27408b;	
+	position: relative;
+	margin-top: 20px;
+	cursor: pointer;
+}
+.botones img{
+	width: 5%;
+	height: 100%;
+    left: 3px;
+	position: absolute;
+	top:0;	
+}
+.contenedoruno{
+	width: 100%;
+	height: 100vh;
+	padding-top: 20vh;
+    background-image: url("../Img/gatoo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.formudos{
+	width:30%;
+	height:400px;
+	position: absolute;
+	background: #3c3c3c;
+	border-radius: 15px;
+	right: -100%;
+	display: block;
+	opacity: 1;
+	box-shadow: 5px 5px 15px #3c3c3c;
+}	
+.cajaformudos{
+	width: 100%;
+	height: 100%;
+}
+.formudos h2{
+	margin: 5%;
+	color: white;
+	font-size: 1.5em;
+	text-align: center;
+	margin-top: 20px;
+	font-family:'roboto',black; 
+	margin-bottom: 30px;
+		 text-shadow: 5px 5px 30px #aaa;
+}
+.formudos label{
+     display: block;
+     font-size:1em;
+     color: white;
+     font-family: 'roboto',black;
+     text-align: center;
+     margin-bottom: 15px;
+     margin-top: 15px;
+}
+.formudos input{
+	width: 90%;
+    transition: 0.5s ease-in;
+    transition: 0.2s ease-out;
+	border-radius: 15px;
+	margin-left: 5%;
+	font-family: 'roboto',black;
+	font-size: 0.9em;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.hecho{
+	display: block;
+	width: 90%;
+	
+	background:#fc5957; 
+	color: white;
+	border-radius: 15px;
+	font-size: 1em;
+	 font-family: 'roboto',black;
+	 margin-top: 30px;
+	 position: relative;
+}
+.hecho:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height:100%;
+	background: rgba(1,1,1,0.5);
+	opacity: 0;
+	z-index: 50;
+	border-radius: 15px;
+	transition: 0.3s ease-in;
+	transition: 0.2s ease-in;
+	transform: scaleX(0);	transform-origin: left;
+
+	z-index: 50;
+}
+.formudos button:hover:before{
+	transform: scaleX(1);
+	opacity:1;
+}
+.return{
+	color:#fc5957;
+	position: absolute;
+	top: 15px;
+	right: 15px; 
+	font-size: 1.2em;
+
+	cursor: pointer;
+
+}
+@keyframes animarflecha{
+
+
+	100%{
+		transform: scale(1.2);
+
+
+	}
+	}
+
+@media screen and (max-width:1425px) and (min-width: 781px){
+.vd{
+ 	padding-top: 0;
+
+}
+}
+
+@media screen and (max-width:780px) and (min-width: 0px){
+.vd{
+    display: none;
+}
+.ud li:hover:before{
+	transform: scaleX(0);
+}
+.ud li:hover:after{
+	transform: scaleX(0);
+}
+.ui li:hover:before{
+	transform: scaleX(0);
+}
+.ui li:hover:after{
+	transform: scaleX(0);
+}
+.formudos{
+    width: 60%;
+ 
+    margin:auto;
+    right: -200%;
+    left: 75px;
+    height: 105%;
+}
+.formudos label{
+    margin-bottom: 20px;
+}
+
+.formudos button{
+    margin-top: 60px;
+}
+ .ingreso{
+    width: 60%;
+    height: 120%;
+    margin:auto;
+ }
+ .ui{
+    display: block;
+
+ }
+ .ui li{
+    display: block;
+    margin-right: -30%;
+
+}
+ .ud{
+    display: block;
+ }
+ .ud li{
+    display: block;
+}
+   .ui li img{
+   	width: 20px;
+   	height: 20px;
+}
+.ud{
+   	margin-right: -30%;
+   	display: flex;
+   	flex-direction: column; 
+}
+.ud li{
+   	display: block;
+   	margin-left: 0;
+}
+.ui li a{
+   	font-size: 0.8em;
+}
+
+.ud li img{
+   	width: 20px;
+   	height: 20px;
+}
+
+.ud li a{
+   	font-size: 0.8em;
+}
+   .logo{
+   
+   	z-index: 10;
+}
+.formu .titu{
+    font-size: 2em;
+   	text-align: center;
+}
+
+.cajauno{
+   	
+}
+.formu{
+
+}
+.flechad{
+	display: none;
+
+}
+.flechai{
+	display: none;
+}
+}
+@media screen and (max-width:480px) and (min-width: 0px){
+.formu h2{
+   	font-size: 7vw;
+}
+.ingreso{
+   	width: 90%;
+   	height: 110%;
+}
+.formudos{
+   	width: 90%;
+   	left: 15px;
+}
+
+.ud{
+	margin-right: -25%;
+}
+.ud li:hover:before{
+	transform: scaleX(0);
+}
+.ud li:hover:after{
+	transform: scaleX(0);
+}
+.ui li:hover:before{
+	transform: scaleX(0);
+}
+.ui li:hover:after{
+	transform: scaleX(0);
+}
+
+
+}
+
+
+
